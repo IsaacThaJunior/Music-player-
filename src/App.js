@@ -97,8 +97,8 @@ export default function App() {
 	};
 
 	const handleSkip = () => {
-		playlist.stop();
 		playlist.next();
+		setIsPlaying(true);
 
 		setCurrentSong(
 			(currentSong) => (currentSong + 1 + songs.length) % songs.length
@@ -107,6 +107,7 @@ export default function App() {
 
 	const handlePrevious = () => {
 		playlist.prev();
+		setIsPlaying(true);
 		setCurrentSong(
 			(currentSong) => (currentSong - 1 + songs.length) % songs.length
 		);
