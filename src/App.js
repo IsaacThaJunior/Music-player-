@@ -107,7 +107,7 @@ export default function App() {
 
 	const handlePrevious = () => {
 		playlist.prev();
-		setIsPlaying(true);
+		setIsPlaying(false);
 		setCurrentSong(
 			(currentSong) => (currentSong - 1 + songs.length) % songs.length
 		);

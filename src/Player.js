@@ -1,5 +1,3 @@
-// import React, { useState } from 'react';
-// import Details from './Details';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faPlay,
@@ -17,7 +15,7 @@ export default function Player({
 	setIsPlaying,
 }) {
 	return (
-		<div className='c-player--controls'>
+		<div className="c-player--controls">
 			<button className="skip-btn" onClick={prev}>
 				<FontAwesomeIcon icon={faBackward} />
 			</button>
